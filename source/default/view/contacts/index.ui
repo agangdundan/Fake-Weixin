@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"id":"contacts_main",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"199",
+				"y":"193",
+				"id":"do_Label_1",
+				"text":"通讯录",
+				"type":"do_Label"
+			}
+		],
+		"height":"1220"
+	}
+}
