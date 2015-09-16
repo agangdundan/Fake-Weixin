@@ -7,7 +7,7 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"000000FF",
+				"bgColor":"22282CFF",
 				"width":"750",
 				"id":"bar",
 				"type":"do_ALayout",
@@ -16,9 +16,10 @@
 						"x":"650",
 						"width":"70",
 						"y":"5",
-						"id":"do_ImageView_1",
+						"id":"add_imageview",
 						"source":"source://image/chats/bar_add.png",
 						"type":"do_ImageView",
+						"enabled":"true",
 						"height":"70"
 					},
 					{

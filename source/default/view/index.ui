@@ -199,7 +199,7 @@
 				"height":"1"
 			},
 			{
-				"bgColor":"000000FF",
+				"bgColor":"22282CFF",
 				"width":"750",
 				"id":"status_bar",
 				"type":"do_ALayout",
