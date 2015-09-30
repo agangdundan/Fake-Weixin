@@ -3,21 +3,29 @@
 		"x":"0",
 		"width":"750",
 		"y":"0",
-		"id":"chats_main",
+		"id":"contacts_main",
 		"type":"do_ALayout",
 		"views":[
 			{
+				"templates":"source://fake-weixin/view/contacts/cell1.ui,source://fake-weixin/view/contacts/cell2.ui",
+				"width":"750",
+				"y":"88",
+				"id":"index_listview",
+				"type":"do_IndexListView",
+				"height":"1092"
+			},
+			{
 				"bgColor":"22282CFF",
 				"width":"750",
-				"id":"bar",
+				"id":"do_ALayout_1",
 				"type":"do_ALayout",
 				"views":[
 					{
 						"x":"650",
 						"width":"70",
 						"y":"5",
-						"id":"add_imageview",
-						"source":"source://image/chats/bar_add.png",
+						"id":"do_ImageView_1",
+						"source":"source://fake-weixin/image/contacts/add_friend.png",
 						"type":"do_ImageView",
 						"enabled":"true",
 						"height":"70"
@@ -28,20 +36,12 @@
 						"width":"216",
 						"fontSize":"40",
 						"id":"do_Label_2",
-						"text":"微信",
+						"text":"通讯录",
 						"type":"do_Label",
 						"fontColor":"FFFFFFFF"
 					}
 				],
 				"height":"88"
-			},
-			{
-				"templates":"source://view/chats/chat_cell.ui",
-				"width":"750",
-				"y":"88",
-				"id":"listview",
-				"type":"do_ListView",
-				"height":"1092"
 			}
 		],
 		"height":"1180"

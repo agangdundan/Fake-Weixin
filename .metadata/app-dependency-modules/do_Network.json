@@ -4,7 +4,7 @@
   "Type": "SM",
   "Name": "网络状态类",
   "Version": "Internal",
-  "Description": "能获取当前手机端的网络状态，当网络状态发生变化时可以回调",
+  "Description": "能获取当前手机端的网络状态,监听网络状态的变化",
   "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150723/464173f6-641e-4383-952a-ff1f818024cb.png",
   "IOS": {
     "Support": 1,
@@ -39,7 +39,7 @@
     {
       "ID": "getIP",
       "Name": "获取移动终端ip地址",
-      "Description": "移动设备的ip地址有可能随时变化，获取当前的ip地址",
+      "Description": "获取当前的ip地址",
       "ReturnType": "String",
       "ReturnDesc": "当前的ip地址",
       "Paras": []
@@ -49,15 +49,7 @@
       "Name": "获取物理地址",
       "Description": "当前设备的物理地址",
       "ReturnType": "String",
-      "ReturnDesc": "返回当前设备的物理地址",
-      "Paras": []
-    },
-    {
-      "ID": "getOperators",
-      "Name": "获取设备的运营商",
-      "Description": "当前设备使用的sim卡运营商",
-      "ReturnType": "String",
-      "ReturnDesc": "China Mobile'-中国移动，'China Unicom'-中国联通，'China Telecom'-中国电信，'others'-其他运营商，'none'-没检测到sim卡",
+      "ReturnDesc": "返回当前设备的物理地址，windows平台返回的地址与直接在手机上查看的不一致，但也表示的是唯一地址",
       "Paras": []
     },
     {

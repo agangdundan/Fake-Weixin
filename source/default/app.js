@@ -9,7 +9,7 @@ var app = d1.sm("do_App");
 
 app.on("loaded", function() {
 	this.openPage({
-		source : "source://view/index.ui",
+		source : "source://fake-weixin/view/index.ui",
 		statusBarState : "transparent"
 	});
 });

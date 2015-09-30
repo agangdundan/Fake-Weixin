@@ -1,6 +1,6 @@
 {
 	"RootView":{
-		"bgColor":"FFFFFFFF",
+		"bgColor":"00000000",
 		"x":"0",
 		"width":"750",
 		"y":"0",
@@ -54,7 +54,7 @@
 				"x":"164",
 				"width":"332",
 				"y":"20",
-				"fontSize":"32",
+				"fontSize":"30",
 				"id":"name_label",
 				"type":"do_Label",
 				"height":"52"

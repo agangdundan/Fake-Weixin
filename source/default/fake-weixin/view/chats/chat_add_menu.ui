@@ -25,7 +25,7 @@
 								"width":"48",
 								"y":"8",
 								"id":"do_ImageView_3",
-								"source":"source://image/chats/add_newmessage.png",
+								"source":"source://fake-weixin/image/chats/add_newmessage.png",
 								"type":"do_ImageView",
 								"height":"48"
 							},
@@ -56,7 +56,7 @@
 								"width":"48",
 								"y":"8",
 								"id":"do_ImageView_4",
-								"source":"source://image/chats/add_scan.png",
+								"source":"source://fake-weixin/image/chats/add_scan.png",
 								"type":"do_ImageView",
 								"height":"48"
 							},
@@ -87,7 +87,7 @@
 								"width":"48",
 								"y":"8",
 								"id":"do_ImageView_5",
-								"source":"source://image/chats/add_friend.png",
+								"source":"source://fake-weixin/image/chats/add_friend.png",
 								"type":"do_ImageView",
 								"height":"48"
 							},
@@ -118,7 +118,7 @@
 								"width":"48",
 								"y":"8",
 								"id":"do_ImageView_6",
-								"source":"source://image/chats/add_money.png",
+								"source":"source://fake-weixin/image/chats/add_money.png",
 								"type":"do_ImageView",
 								"height":"48"
 							},
@@ -140,11 +140,11 @@
 				"height":"338"
 			},
 			{
-				"x":"664",
 				"width":"30",
+				"x":"664",
 				"y":"86",
 				"id":"do_ImageView_2",
-				"source":"source://image/chats/add_menu_bg_top.png",
+				"source":"source://fake-weixin/image/chats/add_menu_bg_top.png",
 				"type":"do_ImageView",
 				"height":"22"
 			}

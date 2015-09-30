@@ -2,7 +2,7 @@
 var storage = sm("do_Storage");
 var listdata = mm("do_ListData");
 var listview = ui("listview");
-var json_path = "data://chats/chat.json";// 本地缓存的数据
+var json_path = "data://fake-weixin/chats/chat.json";// 本地缓存的数据
 
 if (storage.fileExist(json_path)) {
 	storage.readFile(json_path, function(data, e) {
@@ -26,6 +26,6 @@ add_button.on("touch", function() {
 		if (menu.visible == false)
 			menu.visible = true;
 	} else {
-		main.add("menu_id", "source://view/chats/chat_add_menu.ui");
+		main.add("menu_id", "source://fake-weixin/view/chats/chat_add_menu.ui");
 	}
 });

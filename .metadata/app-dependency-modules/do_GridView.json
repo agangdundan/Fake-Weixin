@@ -4,7 +4,7 @@
   "Type": "UI",
   "Name": "Grid视图",
   "Version": "Internal",
-  "Description": "GridView是一个二维网格滚动视图",
+  "Description": "GridView是一个二维网格滚动视图，可将数据源中的一条数据显示为表格中的一个cell",
   "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150617/18ed28c9-de57-42cf-ae5b-6c950662497f.png",
   "IOS": {
     "Support": 1,
@@ -47,7 +47,7 @@
       "DefaultValue": "true",
       "EditType": "0",
       "Group": "",
-      "Description": "为true的时候，当gridview内容超出gridview的边界，会出现滚动条标识。",
+      "Description": "为true的时候，当数据内容超出gridview的边界，会出现滚动条标识",
       "Design": {
         "Type": "Boolean",
         "Data": []
@@ -60,7 +60,7 @@
       "DefaultValue": "",
       "EditType": "0",
       "Group": "",
-      "Description": "设置这个GridView显示多少列，-1 表示自动适应",
+      "Description": "设置这个GridView显示多少列，-1 表示自动适应，iOS不支持（通过cell的宽度和屏幕宽度自动计算列数）",
       "Design": {
         "Type": "UInteger",
         "Data": []
@@ -68,7 +68,7 @@
     },
     {
       "ID": "selectedColor",
-      "Name": "Cell选中的背景颜色",
+      "Name": "cell选中的背景颜色",
       "Type": "String",
       "DefaultValue": "",
       "EditType": "0",
@@ -81,14 +81,14 @@
     },
     {
       "ID": "templates",
-      "Name": "Cell对应的UI文件组",
+      "Name": "显示视图对应UI模板文件",
       "Type": "Node",
       "DefaultValue": "",
       "EditType": "0",
       "Group": "",
-      "Description": "一个GridView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件，这些ui文件没有自己的逻辑代码，和gridview所在的page共用一个脚本环境。\\r\\n这个属性的格式类似如下：\\r\\n[\\\"source://view/cell1.ui\\\",\\\"source://view/cell2.ui\\\",\\\"source://view/cell3.ui]",
+      "Description": "一个GridView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件，这些ui文件没有自己的逻辑代码，和gridview所在的page共用一个脚本环境。\r\n这个属性的格式类似如下：\r\n[\"source://view/cell1.ui\",\"source://view/cell2.ui\",\"source://view/cell3.ui]",
       "Design": {
-        "Type": "Text",
+        "Type": "Richtext",
         "Data": []
       }
     },
@@ -111,20 +111,20 @@
       "ID": "longTouch",
       "Description": "长按cell触发",
       "ReturnType": "String",
-      "ReturnDesc": ""
+      "ReturnDesc": "当前cell的position值"
     },
     {
       "ID": "touch",
       "Description": "点击cell触发",
       "ReturnType": "String",
-      "ReturnDesc": ""
+      "ReturnDesc": "当前cell的position值"
     }
   ],
   "syncMethodes": [
     {
       "ID": "bindItems",
       "Name": "绑定item的数据",
-      "Description": "可绑定listData和hashDatad实例",
+      "Description": "可绑定listData实例",
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": [
@@ -132,7 +132,7 @@
           "ID": "data",
           "Name": "数据",
           "Type": "Node",
-          "Required": 1,
+          "Required": 0,
           "DefaultValue": "",
           "Description": ""
         }
