@@ -8,11 +8,11 @@
 			{
 				"x":"10",
 				"y":"10",
-				"fontSize":"22",
+				"fontSize":"26",
 				"id":"title",
 				"fontStyle":"bold",
 				"type":"do_Label",
-				"fontColor":"0080FFFF",
+				"fontColor":"C0C0C0FF",
 				"height":"30"
 			}
 		],
