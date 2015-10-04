@@ -1,5 +1,6 @@
 {
 	"RootView":{
+		"bgColor":"00000000",
 		"x":"0",
 		"width":"750",
 		"y":"0",
@@ -36,12 +37,15 @@
 				"height":"88"
 			},
 			{
+				"isHeaderVisible":"true",
+				"bgColor":"00000000",
 				"templates":"source://fake-weixin/view/chats/chat_cell.ui",
 				"width":"750",
 				"y":"88",
 				"id":"listview",
 				"type":"do_ListView",
 				"selectedColor":"C0C0C0FF",
+				"headerView":"source://fake-weixin/view/chats/chat_header_view.ui",
 				"height":"1092"
 			}
 		],

@@ -20,12 +20,31 @@ page.on("loaded", function() {
 });
 
 var add_button = ui("add_imageview");
-add_button.on("touch", function() {
-	var menu = ui("menu_id");
-	if (menu) {//如果已经add过，就只是让这个view显示，而不是add一个新的
-		if (menu.visible == false)
-			menu.visible = true;
-	} else {
-		main.add("menu_id", "source://fake-weixin/view/chats/chat_add_menu.ui");
+add_button.on("touch",
+		function() {
+			var menu = ui("menu_id");
+			if (menu) {// 如果已经add过，就只是让这个view显示，而不是add一个新的
+				if (menu.visible == false)
+					menu.visible = true;
+			} else {
+				main.add("menu_id",
+						"source://fake-weixin/view/chats/chat_add_menu.ui");
+			}
+		});
+
+listview.on("pull", function(data) {
+	/**
+	 * @此事件将会多次执行.
+	 * @state == 0 : pull动作开始
+	 * @state == 1 : pull动作持续中
+	 * @state == 2 : pull动作结束
+	 */
+	if (data.state == 2||data.offset > 380){
+		this.rebound();
+		return;
+	}
+	if (data.offset > 100) {
+		deviceone.print(JSON.stringify(data));
+		page.fire("pull", data.offset);
 	}
 });
